@@ -4,7 +4,7 @@
 const mailUtente = prompt("Inserisci la tua mail")
 
 // LISTA DELLE MAIL DI CHI PUò ACCEDERE
-const worldMail = ["matteo@Gmail.com", "leo@gmail.com", "rossi@gmail.com"]
+const worldMail = ["matteo@Gmail.com", "leo@gmail.com", "rossi@gmail.com"];
 
 // CONTROLLO CORRISPONDENZA EMAIL
 let result = "Benvenuto!";
@@ -33,4 +33,16 @@ document.getElementById("player-number").innerHTML = palyerNumber;
 const pcNumber = Math.floor(Math.random() * 6);
 document.getElementById("pc-number").innerHTML = pcNumber;
 
-if let
+// CHI HA VINTO
+// 1. giocatore
+if(palyerNumber > pcNumber){
+    console.log("Hai vinto!");
+}
+// 2. pc
+    else if(palyerNumber < pcNumber){
+    console.log("Ha vinto il banco!");
+}
+// 3. pareggio
+else{
+    console.log("Hai pareggiato vince il banco!");
+}
